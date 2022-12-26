@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NFJWDRD');</script>
+    <!-- End Google Tag Manager -->
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6814QVDHX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-P6814QVDHX');
+        </script>
+        <title>Flag-dle: Wordle for flags</title>
+        <link rel="stylesheet" href="style.css">        
+        <script src="info.js"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6814QVDHX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6814QVDHX');
+    </script>
+    <body onpageshow="setDropdown()" style="background-color: rgb(8, 123, 123);">        
+        <div class="container">
+            <div class="col-sm">
+                 <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFJWDRD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+        <h1>Flag-dle: Wordle for flags</h1>
+        <img src ="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" id="flagImage" alt="flag image" class="img-responsive"></img>
+        <span class="dropdown" >
+            <button onclick="hint()" class="dropbtn" >Hint!</button>
+            <div id="hintDrop" class="dropdown-content">                                          
+            </div>
+        </span>        
+        <span class="dropdown" >
+            <button onclick="myFunction()" class="dropbtn" >List of Countries</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">                            
+            </div>
+        </span><br><br>
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 1: </label><label for="html" id="attempt1" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt1" disabled>Go</button>
+        </div><br>        
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 2: </label><label for="html" id="attempt2" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt2" disabled>Go</button>
+        </div><br>
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 3: </label><label for="html" id="attempt3" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt3" disabled>Go</button>
+        </div><br>
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 4: </label><label for="html" id="attempt4" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt4" disabled>Go</button>
+        </div><br>
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 5: </label><label for="html" id="attempt5" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt5" disabled>Go</button>
+        </div><br>
+        <div class="att">
+            <label for="html" class="attLabel">Attempt 6: </label><label for="html" id="attempt6" style="color: black; font-weight: bold;" aria-placeholder="                    "></label><button class="btn btn-primary" onclick="choice()" id="butt6" disabled>Go</button><br>
+        </div><br>    
+        <button type="button" class="btn btn-success" onclick="getRandomFlag()">New Game</button> 
+            </div>
+         
+        </div>                 
+    </body>
+</html>
